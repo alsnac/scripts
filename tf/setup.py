@@ -25,7 +25,7 @@ REQUIRED_PACKAGES = [
     'tensorflow_io',
     # Workaround due to
     # https://github.com/keras-team/keras/issues/15583
-    'keras'
+    'keras=2.7.0'
 ]
 
 setup(
