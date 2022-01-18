@@ -80,10 +80,14 @@ def xml_to_csv(path):
                      int(float(bndbox.find('ymax').text)),
                      )
             string_out += str(dicio[name_text.replace(' ','_')])+' '
-            string_out += "{:0.6f}".format(float(bndbox.find('xmin').text)/width)+' '
-            string_out += "{:0.6f}".format(float(bndbox.find('ymin').text)/height)+' '
-            string_out += "{:0.6f}".format(float(bndbox.find('xmax').text)/width)+' '
-            string_out += "{:0.6f}".format(float(bndbox.find('ymax').text)/height)+'\n'
+            pos_c_x = 0.5*(float(bndbox.find('xmin').text)+float(bndbox.find('xmax').text))/width
+            pos_c_y = 0.5*(float(bndbox.find('ymin').text)+float(bndbox.find('ymax').text))/height
+            qtd_w = (float(bndbox.find('xmax').text)-float(bndbox.find('xmin').text))/width
+            qtd_h = (float(bndbox.find('ymax').text)-float(bndbox.find('ymin').text))/height
+            string_out += "{:0.6f}".format(pos_c_x)+' '
+            string_out += "{:0.6f}".format(pos_c_y)+' '
+            string_out += "{:0.6f}".format(qtd_w)+' '
+            string_out += "{:0.6f}".format(qtd_h)+'\n'
             box = []
             box.append(int(float(bndbox.find('xmin').text)))
             box.append(int(float(bndbox.find('ymin').text)))
