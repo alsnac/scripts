@@ -13,7 +13,7 @@ annotations_dir = sys.argv[1]
 
 test_ratio = 0.20
 
-annotations_dir = ['helicoverpa_armigera', 'spodoptera_frugiperda']
+annotations_dir = ['helicoverpa_armigera', 'spodoptera_frugiperda', 'dichelops_melacanthus', 'anticarsia_gemmatalis']
 
 #for folder in os.listdir(annotations_dir):
 for folder in annotations_dir:
