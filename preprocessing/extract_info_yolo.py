@@ -46,7 +46,7 @@ if args.image_dir is None:
     args.image_dir = args.xml_dir
 
 is_train = args.train_test
-print(istrain)
+print(is_train)
 #label_map = label_map_util.load_labelmap(args.labels_path)
 #label_map_dict = label_map_util.get_label_map_dict(label_map)
 
