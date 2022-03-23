@@ -82,6 +82,8 @@ def xml_to_csv(path):
         tree = ET.parse(xml_file)
         root = tree.getroot()
         filename = root.find('filename').text
+        filename = filename.replace('Dataset/Dataset-25-Nov-2021/Pragas/anticarsia_gemmatalis/','')
+        filename = filename.replace('Dataset/Dataset-25-Nov-2021/Pragas/dichelops_melacanthus/','')
         width = int(root.find('size').find('width').text)
         height = int(root.find('size').find('height').text)
         for member in root.findall('object'):
