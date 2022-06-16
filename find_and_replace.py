@@ -6,7 +6,7 @@ filename = sys.argv[1]
 
 # creating a variable and storing the text
 # that we want to search
-search_text = ["Dataset/Dataset-25-Nov-2021/Pragas/anticarsia_gemmatalis/","Dataset/Dataset-25-Nov-2021/Pragas/dichelops_melacanthus/"]
+search_text = ["Dataset/Dataset-25-Nov-2021/Pragas/anticarsia_gemmatalis/","Dataset/Dataset-25-Nov-2021/Pragas/dichelops_melacanthus/","Dataset/Dataset-25-Nov-2021/Pragas/euschistus_heros/"]
   
 # creating a variable and storing the text
 # that we want to add
